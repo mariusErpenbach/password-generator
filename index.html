@@ -10,11 +10,13 @@
 <body>
    
      
-        <form id="password-generator">
+ 
             <p> Generate a password. </p>  
-            <input type="number" name="passwordLengthSelect" placeholder="6-12"> <label for="passwordLengthSelect">new password length</label>
-            <button> copy new password </button>
-        </form>
+            <input type="number" id="userLength" name="passwordLengthSelect" placeholder="6-12"/> 
+          
+            <button id="copyButton" onclick="generatePassword()"> copy new password </button>
+            <p id="result"></p>
+   
     <script src="./js/password_generator.js"></script>
 </body>
 </html>
