@@ -14,8 +14,13 @@
             <p> Generate a password. </p>  
             <input type="number" id="userLength" name="passwordLengthSelect" placeholder="6-12"/> 
           
-            <button id="copyButton" onclick="generatePassword()"> copy new password </button>
-            <p id="result"></p>
+            <button id="generateButton" onclick="generatePassword()"> generate </button>
+           
+            
+            <button id="copyButton" onclick="copy()">copy</button>
+            <input id="result" type="text"/>
+
+           
    
     <script src="./js/password_generator.js"></script>
 </body>

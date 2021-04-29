@@ -6,7 +6,14 @@ function generatePassword() {
     for (var i = 0, n = charset.length; i < length; ++i) { // for loop with a second variable to acess the charset array 
         password += charset.charAt(Math.floor(Math.random() * n));
     }
-    document.getElementById("result").innerHTML=password;
+    document.getElementById("result").value=password;
 }
 
+function copy() {
+    var copyText = document.querySelector("#result");
+    copyText.select();
+    document.execCommand("copy");
+  }
+  document.querySelector("#copy").addEventListener("click", copy);
+  
 
